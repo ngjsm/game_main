@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class fruitspawnnew : MonoBehaviour
 {
@@ -45,5 +46,19 @@ public class fruitspawnnew : MonoBehaviour
     void StopSpawning()
     {
         CancelInvoke("SpawnFruit");
+        Debug.Log("게임 종료!");
+
+        // 종료 UI 출력 or 씬 전환 등
+        StartCoroutine(EndGameRoutine());
+    }
+
+    IEnumerator EndGameRoutine()
+    {
+        int finalscore = score.Instance.targetHit;
+        Debug.Log($"최종 점수: {finalscore}");
+
+
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("scene_selector");
     }
 }

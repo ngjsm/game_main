@@ -1,5 +1,7 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class spawnob : MonoBehaviour
 {
@@ -98,10 +100,18 @@ public class spawnob : MonoBehaviour
         }
 
         Debug.Log("게임 종료됨");
+
+        StartCoroutine(LoadMainScene());
+    }
+    private IEnumerator LoadMainScene()
+    {
+        yield return new WaitForSeconds(5f);  // 5초 대기
+        SceneManager.LoadScene("scene_selector");  // 메인 씬 이름으로 변경
     }
 
     public bool IsGameEnded()
     {
         return gameEnded;
     }
+
 }
