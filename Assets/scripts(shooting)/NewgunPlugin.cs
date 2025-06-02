@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class NewgunPlugin : MonoBehaviour
 {
-    private Transform rightPalm;
-    private Transform rightIndexTip;
+    [Header("Hand Tracking (직접 연결)")]
+    public Transform rightPalm;        
+    public Transform rightIndexTip;   
 
     [Header("Gun Settings")]
-    public Transform gunTransform;
-    public Transform firePoint;
-    public GameObject projectilePrefab;
+    public Transform gunTransform;    
+    public Transform firePoint;      
+    public GameObject projectilePrefab; 
     public float rotationSmooth = 5f;
     public float shootCooldown = 0.5f;
 
@@ -25,23 +26,13 @@ public class NewgunPlugin : MonoBehaviour
     private float initialYaw;
     private float lastShotTime;
 
-    void Start()
-    {
-        // 실행 중 생성되는 손 구조를 런타임에 찾아서 할당
-        GameObject rightHand = GameObject.Find("RightHand(Clone)");
-        if (rightHand != null)
-        {
-            rightPalm = rightHand.transform.Find("Palm");
-            rightIndexTip = rightHand.transform.Find("index/tip");
-        }
-
-        if (rightPalm == null || rightIndexTip == null)
-            Debug.LogWarning("▶ 손 트랜스폼을 찾지 못했습니다. 구조를 확인하세요.");
-    }
-
     void Update()
     {
-        if (rightPalm == null || rightIndexTip == null) return;
+        if (rightPalm == null || rightIndexTip == null)
+        {
+            Debug.LogWarning("Palm 또는 IndexTip이 연결되지 않았습니다.");
+            return;
+        }
 
         Vector3 palmPos = rightPalm.position;
 
@@ -65,15 +56,20 @@ public class NewgunPlugin : MonoBehaviour
 
         if (IsFist() && Time.time - lastShotTime > shootCooldown)
         {
-            Debug.Log("▶ 주먹 인식됨: 발사!");
-            Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
-            lastShotTime = Time.time;
+            Fire();
         }
+    }
+
+    void Fire()
+    {
+        Debug.Log("▶ 발사!");
+        Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        lastShotTime = Time.time;
     }
 
     bool IsFist()
     {
         float dist = Vector3.Distance(rightPalm.position, rightIndexTip.position);
-        return dist < 0.05f;
+        return dist < 0.05f; 
     }
 }
