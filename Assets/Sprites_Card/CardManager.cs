@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CardManager : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class CardManager : MonoBehaviour
 
     private List<Card> flippedCards = new List<Card>();
     private bool isProcessing = false;
+    private int matchedCount = 0;
+    private int totalCards = 20;
 
     public bool IsProcessing() => isProcessing;
 
@@ -90,6 +94,13 @@ public class CardManager : MonoBehaviour
             cardB.SetMatched();
             Destroy(cardA.gameObject, 0.3f);
             Destroy(cardB.gameObject, 0.3f);
+
+            matchedCount += 2;
+
+            if (matchedCount >= totalCards)
+            {
+                StartCoroutine(ReturnToSceneSelector());
+            }
         }
         else
         {
@@ -99,5 +110,10 @@ public class CardManager : MonoBehaviour
 
         flippedCards.Clear();
         isProcessing = false;
+    }
+    IEnumerator ReturnToSceneSelector()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("scene_selector"); // ← 여기는 씬 이름 그대로 적어야 합니다.
     }
 }

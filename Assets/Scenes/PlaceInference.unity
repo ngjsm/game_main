@@ -5517,6 +5517,185 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].questionText
+      value: "\uC9C8\uBB38: \uC0AC\uC9C4\uC18D \uBB3C\uAC74\uC740 \uC5B4\uB5A4 \uC7A5\uC18C\uC5D0\uC11C
+        \uBCFC \uC218 \uC788\uC744\uAE4C\uC694?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].questionText
+      value: "\uC9C8\uBB38: \uC0AC\uC9C4\uC18D \uD65C\uB3D9\uC740 \uC8FC\uB85C \uC5B4\uB5A4
+        \uC7A5\uC18C\uC5D0\uC11C \uD558\uB098\uC694?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].questionText
+      value: "\uC9C8\uBB38: \uC0AC\uC9C4\uC18D \uBB3C\uAC74\uC740 \uC5B4\uB514\uC5D0
+        \uBCF4\uAD00\uD558\uB098\uC694?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].clues.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[1].clues.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].clues.Array.data[3].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: bed95499bd7dad446ae215f681a9bdd5, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].clues.Array.data[3].placeName
+      value: "\uCE74\uD398"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].clues.Array.data[4].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 85dd566d2d582e34daccf29d188e5582, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].clues.Array.data[4].placeName
+      value: "\uC9C0\uD558\uCCA0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].clues.Array.data[5].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 15b7abb6bde33dd429e60d99b9306e78, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[0].clues.Array.data[5].placeName
+      value: "\uB3C4\uC11C\uAD00"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[1].clues.Array.data[3].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: b0e340a5bb6de8f4f819624e016a6948, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[1].clues.Array.data[3].placeName
+      value: "\uC6B0\uCCB4\uAD6D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[1].clues.Array.data[4].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: f90fcba83009be448b2bb3462f6d49ed, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[1].clues.Array.data[4].placeName
+      value: "\uC774\uBC1C\uC18C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[1].clues.Array.data[5].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 1bb384d3d1c581c4789d53cf3eb7c144, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[1].clues.Array.data[5].placeName
+      value: "\uC2DD\uB2F9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[0].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: a68ffd7601e1dd044a21785ca936fe4c, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[0].placeName
+      value: "\uB3C4\uC11C\uAD00"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[1].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c7bb6ffbe659ca43a51fa706d0690cd, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[1].placeName
+      value: "\uACF5\uC6D0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[2].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: e9b58ba142f1cb44bbf3ac5f4c8b5209, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[2].placeName
+      value: "\uAD50\uD68C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[3].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: a477fe0c57cf3294cb7539822534a609, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[3].placeName
+      value: "\uC774\uBC1C\uC18C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[4].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 320723ecb558d6a45a3ba8b2124f294a, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[4].placeName
+      value: "\uC6B4\uB3D9\uC7A5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[5].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 5091be95a7fe0974c9e5042d082c4a41, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[2].clues.Array.data[5].placeName
+      value: "\uBAA9\uC695\uD0D5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[0].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e8faf4b4e439474d96458d62b5fc3cc, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[0].placeName
+      value: "\uC637\uC7A5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[1].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 0730ee7140af3fa43b1af5b18722cc7a, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[1].placeName
+      value: "\uC695\uC2E4"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[2].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 15b7abb6bde33dd429e60d99b9306e78, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[2].placeName
+      value: "\uCC45\uC7A5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[3].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: b57cdba488f073245948dd7eaacd0627, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[3].placeName
+      value: "\uCC2C\uC7A5"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[4].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b734df14de0d474dadf6079d4ed9f84, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[4].placeName
+      value: "\uD604\uAD00"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[5].clueImage
+      value: 
+      objectReference: {fileID: 21300000, guid: f88b53675fd6315469b027f27ec9182b, type: 3}
+    - target: {fileID: 4842049935439411116, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
+      propertyPath: problems.Array.data[3].clues.Array.data[5].placeName
+      value: "\uBC30\uB780\uB2E4"
+      objectReference: {fileID: 0}
     - target: {fileID: 5162234882536843282, guid: 9cef489ca2f9f65429f812a771af5b8f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -403,7 +403,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 216597952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075844337c6054f4f9c90f430ea87e8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6467d0cacbb6b8446a02d1c16b90fd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gunTransform: {fileID: 216597957}
@@ -411,9 +411,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 2599372865707322391, guid: 6e76826d83f921944a2dbbe2c511f0c0, type: 3}
   rotationSmooth: 5
   shootCooldown: 0.5
-  pinchDistance: 0.02
   yawSensitivity: 150
-  maxPalmMovement: 0.5
+  maxPalmMovement: 0.2
 --- !u!4 &341534744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 432918, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}

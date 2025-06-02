@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,6 +57,7 @@ public class PlaceManager : MonoBehaviour
             questionTextUI.text = "";  // ❗ 아무 것도 띄우지 않음
             clueImageUI.enabled = false;
             feedbackText.text = "<color=green>퀴즈가 모두 끝났어요!\n수고하셨습니다.</color>";
+            Invoke(nameof(LoadResultScene), 5f);
             return;
         }
 
@@ -113,5 +115,9 @@ public class PlaceManager : MonoBehaviour
         }
 
         Invoke(nameof(ShowNextQuestion), nextDelay);
+    }
+    void LoadResultScene()
+    {
+        SceneManager.LoadScene("scene_selector");
     }
 }

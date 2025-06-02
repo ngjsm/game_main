@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,6 +52,7 @@ public class QuizManager : MonoBehaviour
         if (questionQueue.Count == 0)
         {
             feedbackText.text = $"퀴즈 완료!\n정답 수: {correctCount}/{quizItems.Length}";
+            Invoke(nameof(LoadResultScene), 5f);
             return;
         }
 
@@ -100,5 +102,9 @@ public class QuizManager : MonoBehaviour
         }
 
         Invoke(nameof(ShowNextQuestion), nextDelay);
+    }
+    void LoadResultScene()
+    {
+        SceneManager.LoadScene("scene_selector");
     }
 }
