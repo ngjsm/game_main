@@ -408,6 +408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightPalm: {fileID: 1603183789}
   rightIndexTip: {fileID: 524075960}
+  rightMiddleTip: {fileID: 1172030553}
+  rightRingTip: {fileID: 1856531299}
   gunTransform: {fileID: 216597957}
   firePoint: {fileID: 1137733687}
   projectilePrefab: {fileID: 2599372865707322391, guid: 6e76826d83f921944a2dbbe2c511f0c0, type: 3}
@@ -1073,6 +1075,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155597234}
   m_CullTransparentMesh: 1
+--- !u!4 &1172030553 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2214707560474337288, guid: 8e0fbeda1179e774da6992760eebb4f1, type: 3}
+  m_PrefabInstance: {fileID: 1300266156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1177051318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 313913538570444466, guid: 8e0fbeda1179e774da6992760eebb4f1, type: 3}
@@ -1204,6 +1211,10 @@ PrefabInstance:
     - target: {fileID: 5270838610523157746, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
       propertyPath: m_Name
       value: XR Leap Provider Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270838610523157747, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
+      propertyPath: trackingSource
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5270838610523157747, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
       propertyPath: openXRLeapProvider
@@ -6001,6 +6012,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730505642}
   m_CullTransparentMesh: 1
+--- !u!4 &1856531299 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7842483291229009886, guid: 8e0fbeda1179e774da6992760eebb4f1, type: 3}
+  m_PrefabInstance: {fileID: 1300266156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132512659
 GameObject:
   m_ObjectHideFlags: 0

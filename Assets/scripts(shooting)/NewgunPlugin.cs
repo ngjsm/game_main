@@ -6,7 +6,9 @@ public class NewgunPlugin : MonoBehaviour
 {
     [Header("Hand Tracking (직접 연결)")]
     public Transform rightPalm;        
-    public Transform rightIndexTip;   
+    public Transform rightIndexTip;
+    public Transform rightMiddleTip;
+    public Transform rightRingTip;
 
     [Header("Gun Settings")]
     public Transform gunTransform;    
@@ -33,6 +35,8 @@ public class NewgunPlugin : MonoBehaviour
             Debug.LogWarning("Palm 또는 IndexTip이 연결되지 않았습니다.");
             return;
         }
+
+        Debug.Log("실행중");
 
         Vector3 palmPos = rightPalm.position;
 
@@ -69,7 +73,10 @@ public class NewgunPlugin : MonoBehaviour
 
     bool IsFist()
     {
-        float dist = Vector3.Distance(rightPalm.position, rightIndexTip.position);
-        return dist < 0.05f; 
+        float indexDist = Vector3.Distance(rightIndexTip.position, rightPalm.position);
+        float middleDist = Vector3.Distance(rightMiddleTip.position, rightPalm.position);
+        float ringDist = Vector3.Distance(rightRingTip.position, rightPalm.position);
+
+        return indexDist < 0.025f && middleDist < 0.025f && ringDist < 0.025f;
     }
 }
